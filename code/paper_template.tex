@@ -1,0 +1,207 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={Millstreams: Domesday Mill Places, Modern Traces of Mills and the Textile Mills that Went Elsewhere},pdfauthor={Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Millstreams: Domesday Mill Places, Modern Traces\\[2pt] of Mills and the Textile Mills that Went Elsewhere\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: \href{https://doi.org/10.5281/zenodo.23727140}{https://doi.org/10.5281/zenodo.23727140}\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+Domesday Book recorded England's mills manor by manor in 1086. Because a watermill needs a particular site and its dam and channels are costly to move, mill places are a natural test of how long the use of a place persists. I sum the mills in every Domesday entry as coded by the Hull Domesday Project, which gives {{domesday.mills_total|f2c}} mills in {{domesday.entries_with_mills|int}} entries, and set the {{sample.mill_places|int}} places with a mill against three modern traces of mills: OpenStreetMap and Wikidata mill buildings, and Ordnance Survey names containing the word Mill. Within 1 km, {{share.1km.water.mill|pct1}} of Domesday mill places have a mapped watermill today, against {{share.1km.water.nomill|pct1}} of the {{sample.no_mill_places|int}} other Domesday places, {{share.1km.water.ratio_local|f1}} times the rate expected from places of similar size in the same county. With county fixed effects and controls for size, distance to a watercourse and local relief, the odds ratio is {{models_1km.water.or_|f2}} (95\% interval {{models_1km.water.lo|f2}} to {{models_1km.water.hi|f2}}), and the rate rises with the number of mills recorded. Windmills, which postdate the survey, show no such link (odds ratio {{models_1km.wind.or_|f2}}), which suggests that the result reflects persistent water-power sites rather than settlement size or mapping effort. At county level the association is weak (Spearman {{counties.spearman.traces_built.rho|f2}}). The textile mills of the Industrial Revolution recorded in Wikidata ({{textile.textile.n|int}} in England) lie a median {{textile.textile.med_km|f1}} km from the nearest Domesday mill place, against {{textile.water.med_km|f1}} km for mapped watermills, chiefly because they cluster in the North West, where Domesday recorded almost no mills. The results are traces in uneven open data, not a census of mills.
+
+\textbf{Keywords:} Domesday Book; watermills; windmills; persistence; textile mills; Industrial Revolution; OpenStreetMap; Wikidata
+\end{quote}
+
+\section{Introduction}
+
+Domesday Book is a survey of much of England and parts of Wales made at the order of William the Conqueror and completed, according to its colophon, in 1086 (Wikipedia contributors 2026a). Among the resources it records for each manor are its mills. Wikipedia's article on the watermill reports that Domesday records 5,624 watermills in England, citing Gimpel (1977), and that later research gives a less conservative total of 6,082, a minimum because the north was not properly recorded (Wikipedia contributors 2026b). Windmills came later: the same encyclopaedia dates the earliest certain reference to a windmill in northern Europe to 1185, at Weedley in Yorkshire (Wikipedia contributors 2026c).
+
+A watermill is tied to its site more tightly than most buildings. It needs a stream with enough fall, a weir or dam, a leat to bring water to the wheel and a tailrace to take it away. Once these were dug, rebuilding on the same spot was usually easier than starting again elsewhere. That makes the mills of 1086 a natural starting point for asking how long the use of a place persists. If good mill sites were found early and kept, the places that had mills in Domesday Book should still be marked by mills, or the remains of mills, on today's maps.
+
+This note asks three questions. First, how many mills do the Domesday entries record, and where? Second, are the places that had mills in 1086 more likely than other Domesday places to have a trace of a mill today, once size and local mapping are allowed for, and is that link specific to water power? Third, did the textile mills of the eighteenth and nineteenth centuries, the emblematic buildings of the Industrial Revolution, reuse the old mill places, or go somewhere new?
+
+The note is a companion to two earlier open-data studies: Domesday Destiny, which compares every Domesday place with its 2021 population (Hotham 2026a), and Minted, on the Anglo-Saxon mint towns (Hotham 2026b). An interactive version, with a searchable map, is at \url{https://tristan-hotham.github.io/domesday-mills/}.
+
+\section{Data}
+
+\subsection{Domesday mills}
+
+The Domesday figures come from the Hull Domesday Project's coded database (Hull Domesday Project), as republished entry by entry in the realm-domesday repository (embabel-worlds 2026), with place locations linked to Open Domesday (Powell-Smith 2011). The repository holds Hull's coding of Great Domesday and figures parsed from the translation of Little Domesday (Essex, Norfolk and Suffolk); for mills it reports 97.8\% agreement with Open Domesday. Each place is located at the centre of its 1 km Ordnance Survey grid square. The place table, with households, comes from my Domesday Destiny study (Hotham 2026a).
+
+\subsection{Modern traces of mills}
+
+There is no complete open register of mill sites in Britain, so I use three imperfect traces. OpenStreetMap (OpenStreetMap contributors 2026) objects tagged as watermills, windmills, tide mills or mills under the keys man\_made, historic, disused:man\_made or building: {{modern.osm|int}} objects in the United Kingdom. Wikidata (Wikidata contributors 2026) items in the United Kingdom of one of twenty mill classes (from watermill and windmill to cotton mill and bobbin mill) with coordinates: {{modern.wikidata|int}} items, many of them listed buildings. Both were retrieved through QLever on 28 October 2026. Third, OS Open Names (Ordnance Survey 2026a) features whose names contain Mill or Mills as a word, such as Mill Wood, Mill Pond or New Mills: {{modern.osnames|int}} features. The compact version of OS Open Names used here has populated places and natural features but not roads, so street names such as Mill Lane are not included.
+
+Each modern point is given a kind from its tags, Wikidata classes and label: water (watermill, water mill, tide mill, corn mill, flour mill), wind (windmill, post mill, smock mill, tower mill), textile (the cotton mill class, or a label naming cotton, wool, woollen, worsted, silk, flax, linen, lace, spinning, weaving or a similar word), other industry (saw, paper, gunpowder, bobbin, fulling and similar), unspecified mill, and Mill name. In England there are {{modern.england_by_kind.water|int}} watermills, {{modern.england_by_kind.wind|int}} windmills, {{modern.england_by_kind.textile|int}} textile mills, {{modern.england_by_kind.industry|int}} other industrial mills, {{modern.england_by_kind.mill|int}} unspecified mills and {{modern.england_by_kind.name|int}} Mill names.
+
+\subsection{Setting}
+
+Distances to the nearest watercourse use the river and tidal river links of OS Open Rivers (Ordnance Survey 2026b). Elevation and local relief (the highest minus the lowest ground at 37 points up to 1 km away) come from the AWS Terrain Tiles of Mapzen and Tilezen at zoom 10, the same terrain model used in my Within Sight study. At that resolution relief is a coarse guide to the fall of a stream, not a measurement of it.
+
+\section{Methods}
+
+\subsection{Counting and placing Domesday mills}
+
+I sum the mills field over every entry, keeping fractions. To place mills, an entry's mills are shared equally among the places it describes, the allocation rule used by the repository's own views and by Domesday Destiny; places an entry only names as dependencies get nothing. The test sample is every Domesday place that at least one entry describes and that has a location. Where Hull lists two places of the same name in the same grid square, I merge them, summing their mills and households ({{sample.merged|int}} rows merged), which leaves {{sample.places|int}} places.
+
+\subsection{Persistence tests}
+
+For each place I measure the straight-line distance from the centre of its grid square to the nearest modern trace of each kind and record whether one lies within 500 m, 1 km and 2 km. Because a grid-square centre can be up to about 700 m from any point in the square, 1 km is the main threshold. I compare places with a mill in 1086 with places without one in three ways: the raw shares; the ratio of the observed share to a local expectation, the share among places without a mill in the same Domesday county and the same fifth of all places by 1086 households; and logistic regressions of each outcome on having a mill, with county fixed effects, log households, the log of the distance to the nearest watercourse and the log of local relief. Counties in which no place has the outcome are dropped from that regression. Windmills serve as a placebo: they were not a Domesday technology, so a link between Domesday mills and modern windmills would point to size or mapping effects rather than to persistent water-power sites.
+
+\subsection{Counties and textile mills}
+
+Each modern point is assigned to the Domesday county of the nearest Domesday place within 10 km, and I compare Domesday mills with mapped mills by county using Spearman's rank correlation (Spearman 1904). For the textile question I measure, for every modern mill in England, the distance to the nearest Domesday place with a mill and its setting, and compare textile mills with watermills, windmills and unspecified mills, in all of England and within the North West and Yorkshire and the Humber only, using the ONS region of the nearest OS Open Names settlement.
+
+\section{Results}
+
+\subsection{How many mills?}
+
+The entries record {{domesday.mills_total|f2c}} mills in {{domesday.entries_with_mills|int}} entries: {{domesday.mills_great_domesday|f2c}} in Great Domesday and {{domesday.mills_little_domesday|int}} in Little Domesday. Most entries with mills have one ({{domesday.entry_size_dist.1|int}}) or two ({{domesday.entry_size_dist.2|int}}); {{domesday.entries_fractional|int}} record a fraction of a mill. The total is {{domesday.diff_vs_5624|int}} above the figure of 5,624 and {{domesday.diff_vs_6082|int}} above 6,082. I cannot reconcile these totals line by line, but they differ in how they treat shares of mills and mills that appear under two holders, and Yorkshire contributes {{counties.by_name.Yorkshire.mills1086|int}}. The count here is best read as a count of what Hull's coding of the entries records. {{domesday.mills_no_place|f1}} mills are in entries that describe no mapped place.
+
+Figure~\ref{fig:counties} shows the county totals. Norfolk ({{counties.by_name.Norfolk.mills1086|int}}), Lincolnshire ({{counties.by_name.Lincolnshire.mills1086|int}}) and Wiltshire ({{counties.by_name.Wiltshire.mills1086|int}}) lead, but relative to recorded households Wiltshire has the most, {{counties.by_name.Wiltshire.mills_per_100hh|f1}} mills per 100 households, against {{counties.by_name.Norfolk.mills_per_100hh|f1}} in Norfolk and {{counties.by_name.Devon.mills_per_100hh|f1}} in Devon. Of the {{sample.places|int}} places in the sample, {{sample.mill_places|int}} have at least part of a mill. Mill places are larger than other places (median {{setting.hh_mill|int}} recorded households against {{setting.hh_nomill|int}}) and closer to water (median {{setting.river_m_mill|int}} m from a watercourse against {{setting.river_m_nomill|int}} m).
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.78\textwidth]{f_counties.png}
+\caption{Mills in the Domesday entries of each county as coded by the Hull Domesday Project, with mills per 100 recorded households. Lancashire between the Ribble and the Mersey is part of Cheshire; the far north was not surveyed.}\label{fig:counties}
+\end{figure}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.82\textwidth]{f_map.png}
+\caption{Domesday places with a mill in 1086 (brown, sized by mills), watermills mapped today in OpenStreetMap or Wikidata (blue) and textile mills in Wikidata (purple). Places are at the centre of their 1 km grid square. Coastline: Natural Earth.}\label{fig:map}
+\end{figure}
+
+\subsection{Old mill places still have watermills}
+
+Figure~\ref{fig:map} maps the mill places and the modern watermills and textile mills, and Table~\ref{tab:share} gives the comparisons. Within 1 km, {{share.1km.water.mill|pct1}} of Domesday mill places have a mapped watermill, against {{share.1km.water.nomill|pct1}} of places without a mill, a ratio of {{share.1km.water.ratio|f1}}. Against the local expectation (same county, same size fifth) the ratio is {{share.1km.water.ratio_local|f1}}, and in the regression the odds ratio is {{models_1km.water.or_|f2}} (95\% interval {{models_1km.water.lo|f2}} to {{models_1km.water.hi|f2}}, {{models_1km.water.p|p}}). The gap is visible at every distance up to 5 km (Figure~\ref{fig:curve}).
+
+{{TABLE_SHARE}}
+
+The windmill placebo behaves as it should. Within 1 km, {{share.1km.wind.mill|pct1}} of mill places and {{share.1km.wind.nomill|pct1}} of other places have a mapped windmill; the local ratio is {{share.1km.wind.ratio_local|f2}} and the regression odds ratio {{models_1km.wind.or_|f2}} ({{models_1km.wind.lo|f2}} to {{models_1km.wind.hi|f2}}). If anything, Domesday mill places are slightly less likely than comparable places to have a windmill nearby, perhaps because a place with good water power had less need of one. The contrast between the two curves in Figure~\ref{fig:curve} is the core of the result: the link is with water power, not with mills in general.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{f_curve.png}
+\caption{Share of Domesday places with a mapped watermill (left) or windmill (right) within a given distance, for places with a mill in 1086 ({{sample.mill_places|int}}, solid) and without ({{sample.no_mill_places|int}}, dashed).}\label{fig:curve}
+\end{figure}
+
+The link also rises with the number of mills (Figure~\ref{fig:dose}). Places with part of a mill differ little from places with none ({{dose.1.water1|pct1}} against {{dose.0.water1|pct1}}), but the share with a mapped watermill within 1 km is {{dose.2.water1|pct1}} for places with one mill, {{dose.3.water1|pct1}} with two and {{dose.4.water1|pct1}} with three or more, {{dose_ratio_water_3plus_vs_none|f1}} times the rate for places with none. Broader traces show the same direction with smaller ratios: any mapped mill building ({{share.1km.built.mill|pct1}} against {{share.1km.built.nomill|pct1}}, odds ratio {{models_1km.built.or_|f2}}) and Mill names on OS Open Names ({{share.1km.name.mill|pct1}} against {{share.1km.name.nomill|pct1}}, odds ratio {{models_1km.name.or_|f2}}). In every regression, being further from a watercourse lowers the chance of a watermill trace (odds ratio per tenfold distance {{models_1km.water.or_river|f2}}), as it should.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.85\textwidth]{f_dose.png}
+\caption{Share of Domesday places with a mapped watermill or windmill within 1 km, by the number of mills in their 1086 entries.}\label{fig:dose}
+\end{figure}
+
+Among the {{top_places_n|int}} places with the most mills, {{top_places_traced|int}} have a mapped mill building or a Mill name within 1 km. Several of those without one are towns, such as Derby ({{examples.Derby.mills|int}} mills), Dorchester and Sherborne, where old mills are less likely to be tagged as mills in the open data.
+
+\subsection{Counties}
+
+County by county, Domesday mills correlate strongly with recorded households (Spearman {{counties.spearman.households1086.rho|f2}}) but only weakly with mapped mill buildings today ({{counties.spearman.traces_built.rho|f2}}, {{counties.spearman.traces_built.p|p}}, {{counties.n|int}} counties) or with mapped watermills ({{counties.spearman.traces_water.rho|f2}}). The largest modern counts are in Yorkshire ({{counties.by_name.Yorkshire.traces_built|int}} mapped mill buildings against {{counties.by_name.Yorkshire.mills1086|int}} Domesday mills) and in Cheshire, whose nearest Domesday places capture the textile towns of south Lancashire ({{counties.by_name.Cheshire.traces_textile|int}} textile mills). Across counties the open data mostly measure later industry and the energy of mappers; the place-level tests, which compare places within a county, are much less exposed to this.
+
+\subsection{The textile mills went elsewhere}
+
+The {{textile.textile.n|int}} textile mills in England are overwhelmingly northern: {{textile.north_west_n|int}} are in the North West and {{textile.north_share|pct0}} in the North West or Yorkshire and the Humber. Their median distance to the nearest Domesday mill place is {{textile.textile.med_km|f1}} km, against {{textile.water.med_km|f1}} km for watermills, {{textile.wind.med_km|f1}} km for windmills and {{textile.mill.med_km|f1}} km for unspecified mills (Figure~\ref{fig:textile}); {{textile.textile.within2|pct1}} of textile mills are within 2 km of one, against {{textile.water.within2|pct1}} of watermills. The few close ones are in the south and west, for example a flax mill at South Petherton and silk mills at Tring, Chipping Campden and Whitchurch.
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=\textwidth]{f_textile.png}
+\caption{Mapped mills in England by distance to the nearest Domesday place with a mill.}\label{fig:textile}
+\end{figure}
+
+Most of this reflects where Domesday recorded mills, not a choice to avoid old sites. In the Domesday data the North West has {{region_domesday.North West.places|int}} places and {{region_domesday.North West.mill_places|int}} with a mill, and Yorkshire and the Humber {{region_domesday.Yorkshire and the Humber.mill_places|int}} of {{region_domesday.Yorkshire and the Humber.places|int}}, against {{region_domesday.South West.mill_places|int}} of {{region_domesday.South West.places|int}} in the South West (Figure~\ref{fig:north}). But even within those two northern regions, the median textile mill is {{textile.north.textile.med_km|f1}} km from a Domesday mill place and the median watermill {{textile.north.water.med_km|f1}} km (Mann-Whitney {{textile.north.p_textile_vs_water|p}}), and none of the {{textile.north.textile.n|int}} northern textile mills is within 2 km of one, against {{textile.north.water.within2|pct0}} of northern watermills. Textile mills also sit further from the river network (Table~\ref{tab:setting}): {{textile.river100.textile|pct0}} are within 100 m of a watercourse, against {{textile.river100.water|pct0}} of watermills. Many of the textile mills in Wikidata are large town mills, and I cannot separate water-powered from steam-powered mills in these data.
+
+{{TABLE_SETTING}}
+
+\begin{figure}[tbp]\centering
+\includegraphics[width=0.85\textwidth]{f_north.png}
+\caption{The north Midlands and the North West: Domesday mill places (brown), mapped watermills (blue) and textile mills in Wikidata (purple). Towns are placed at their OS Open Names point.}\label{fig:north}
+\end{figure}
+
+\section{Discussion}
+
+The watermill result is the clearest. Places that had a mill in 1086 are several times more likely than comparable places to have a mapped watermill nearby today, the excess grows with the number of mills recorded, and it does not appear for windmills. A simple explanation fits all three facts: water-power sites, once established, were kept. A dam and a leat are long-lived investments. The data here cannot show that any given modern mill stands on the site of a Domesday mill, and many mapped mills will be later buildings, but the pattern is what persistence of sites would produce.
+
+The textile result is different in kind. The textile mills that Wikidata records are mostly in the North West, a region Domesday barely recorded and where it lists few mills. Even within the north they are further from Domesday mill places than watermills are, and less tied to the river network. The Industrial Revolution's textile mills do not, on this evidence, grow out of the medieval corn-mill places. They are a new geography, laid over an old one that carried on.
+
+The county comparison is a caution about open data. Modern traces of mills are what people have chosen to map, list and describe. Comparing counties mostly measures that effort and later industry; comparing places within counties is more robust.
+
+\section{Limitations}
+
+The modern traces are incomplete and uneven: OpenStreetMap and Wikidata hold the mills someone has mapped or listed, not every mill site, and coverage differs by county, by kind of mill and between town and country. A place with no trace may have had a mill until recently. Domesday places are located only to a 1 km grid square, and a Domesday place may combine several manors, so distances under about 700 m carry little information. Domesday itself is thin for Yorkshire, partial for Lancashire and absent for the far north, and the allocation of an entry's mills among the places it describes is a rule of thumb. The classification of modern mills relies on tags, classes and labels; most Wikidata mills are of unstated kind, the textile set is small, and water and steam power cannot be told apart. Finally, a modern watermill near a Domesday mill place is consistent with continuity of the site, but it is not proof that it is the same mill.
+
+\section{Conclusion}
+
+Domesday Book's {{domesday.mills_total|int}} mills left a mark that open data can still find. Places with a mill in 1086 are much more likely than similar places to have a watermill on today's map, and the link is specific to water power. The textile mills of the Industrial Revolution, by contrast, mostly rose where Domesday recorded few mills, away from the old mill places.
+
+\section*{Data and code availability}
+
+Derived data (Domesday places with mills and households, the test sample with distances and setting, the modern traces with their kind and setting, the county table) and all reported numbers (\texttt{results.json}) are at \url{https://github.com/Tristan-Hotham/domesday-mills}, with the analysis code, and in the Zenodo record for this paper (\url{https://doi.org/10.5281/zenodo.23727140}). The interactive version is at \url{https://tristan-hotham.github.io/domesday-mills/}. Because the derived data include Hull Domesday Project figures (CC BY-NC-SA), they and the text are released under CC BY-NC-SA 4.0; points derived from OpenStreetMap remain under the ODbL; code is MIT. Contains OS data \textcopyright{} Crown copyright and database right 2026, used under the Open Government Licence v3.0.
+
+\section*{Funding and competing interests}
+
+This work received no funding. The author declares no competing interests.
+
+\section*{Use of AI}
+
+I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.
+
+\section*{References}
+\small
+\setlength{\parskip}{0.35em}
+\hangindent=1.5em embabel-worlds (2026). realm-domesday: Domesday Book as linked reference data. GitHub repository. \url{https://github.com/embabel-worlds/realm-domesday}
+
+\hangindent=1.5em Gimpel, J. (1977). \textit{The Medieval Machine: The Industrial Revolution of the Middle Ages}. (Cited via Wikipedia contributors 2026b.)
+
+\hangindent=1.5em Hotham, T. (2026a). Is Domesday Destiny? Interactive study and data. \url{https://tristan-hotham.github.io/domesday-destiny/}
+
+\hangindent=1.5em Hotham, T. (2026b). Minted: the Anglo-Saxon and Norman mint towns of England and what became of them. Zenodo. \url{https://doi.org/10.5281/zenodo.23689962}
+
+\hangindent=1.5em Hull Domesday Project. Professor J.J.N. Palmer, George Slater and the University of Hull. CC BY-NC-SA. \url{https://digitalcollections.hull.ac.uk/collections/3t945r28b}
+
+\hangindent=1.5em Mapzen and Tilezen. Terrain Tiles on AWS (terrarium encoding). Attribution: \url{https://github.com/tilezen/joerd/blob/master/docs/attribution.md}
+
+\hangindent=1.5em OpenStreetMap contributors (2026). OpenStreetMap. Open Database Licence. \url{https://www.openstreetmap.org/copyright}
+
+\hangindent=1.5em Ordnance Survey (2026a). OS Open Names. Dataset, Open Government Licence v3.0. \url{https://www.ordnancesurvey.co.uk/products/os-open-names}
+
+\hangindent=1.5em Ordnance Survey (2026b). OS Open Rivers. Dataset, Open Government Licence v3.0. \url{https://www.ordnancesurvey.co.uk/products/os-open-rivers}
+
+\hangindent=1.5em Powell-Smith, A. (2011). Open Domesday. \url{https://opendomesday.org/}
+
+\hangindent=1.5em Spearman, C. (1904). The proof and measurement of association between two things. \textit{American Journal of Psychology} 15(1), 72 to 101.
+
+\hangindent=1.5em Wikidata contributors (2026). Wikidata. CC0. \url{https://www.wikidata.org}
+
+\hangindent=1.5em Wikipedia contributors (2026a). Domesday Book. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/Domesday_Book}
+
+\hangindent=1.5em Wikipedia contributors (2026b). Watermill. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/Watermill}
+
+\hangindent=1.5em Wikipedia contributors (2026c). Windmill. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/Windmill}
+
+\end{document}
