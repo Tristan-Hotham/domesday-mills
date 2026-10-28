@@ -1,0 +1,2106 @@
+{
+ "domesday": {
+  "mills_total": 6172.25,
+  "entries_with_mills": 4160,
+  "entries_fractional": 241,
+  "mills_no_place": 98.5,
+  "mills_little_domesday": 1008.0,
+  "mills_great_domesday": 5164.25,
+  "entry_size_dist": {
+   "2": 703,
+   "3 or more": 393,
+   "1": 2842,
+   "half or 1.5": 200,
+   "other": 22
+  },
+  "places_total": 14334,
+  "places_with_coords": 13068,
+  "places_with_mill": 3395,
+  "places_with_mill_all": 3606,
+  "mills_on_placed": 5683.05,
+  "quoted_5624": 5624,
+  "quoted_6082": 6082,
+  "diff_vs_5624": 548.25,
+  "diff_vs_6082": 90.25
+ },
+ "modern": {
+  "rows": 6049,
+  "osm": 1101,
+  "wikidata": 3331,
+  "osnames": 1617,
+  "by_country": {
+   "England": 4581,
+   "Northern Ireland": 311,
+   "Scotland": 766,
+   "Wales": 391
+  },
+  "england_by_kind": {
+   "industry": 58,
+   "mill": 1590,
+   "name": 1319,
+   "textile": 113,
+   "water": 526,
+   "wind": 975
+  },
+  "england_by_source_kind": {
+   "OS Open Names|name": 1319,
+   "OSM|industry": 1,
+   "OSM|mill": 39,
+   "OSM|water": 233,
+   "OSM|wind": 500,
+   "Wikidata|industry": 57,
+   "Wikidata|mill": 1551,
+   "Wikidata|textile": 113,
+   "Wikidata|water": 293,
+   "Wikidata|wind": 475
+  },
+  "uk_by_kind": {
+   "industry": 109,
+   "mill": 1985,
+   "name": 1617,
+   "textile": 147,
+   "water": 1019,
+   "wind": 1172
+  }
+ },
+ "sample": {
+  "rows_with_entries": 11974,
+  "places_after_merge": 11892,
+  "merged": 82,
+  "places": 11892,
+  "mill_places": 3390,
+  "no_mill_places": 8502,
+  "england": 11790
+ },
+ "share": {
+  "500m": {
+   "built": {
+    "mill": 0.0655,
+    "nomill": 0.0247,
+    "ratio": 2.651,
+    "mill_n": 222,
+    "nomill_n": 210,
+    "expected_local": 0.0212,
+    "obs_matched": 0.0655,
+    "ratio_local": 3.095,
+    "matched_n": 3390
+   },
+   "water": {
+    "mill": 0.0195,
+    "nomill": 0.0038,
+    "ratio": 5.173,
+    "mill_n": 66,
+    "nomill_n": 32,
+    "expected_local": 0.0029,
+    "obs_matched": 0.0195,
+    "ratio_local": 6.672,
+    "matched_n": 3390
+   },
+   "wind": {
+    "mill": 0.0103,
+    "nomill": 0.0078,
+    "ratio": 1.33,
+    "mill_n": 35,
+    "nomill_n": 66,
+    "expected_local": 0.0103,
+    "obs_matched": 0.0103,
+    "ratio_local": 1.0,
+    "matched_n": 3390
+   },
+   "name": {
+    "mill": 0.015,
+    "nomill": 0.0109,
+    "ratio": 1.375,
+    "mill_n": 51,
+    "nomill_n": 93,
+    "expected_local": 0.0078,
+    "obs_matched": 0.015,
+    "ratio_local": 1.925,
+    "matched_n": 3390
+   },
+   "any": {
+    "mill": 0.0764,
+    "nomill": 0.0346,
+    "ratio": 2.209,
+    "mill_n": 259,
+    "nomill_n": 294,
+    "expected_local": 0.0279,
+    "obs_matched": 0.0764,
+    "ratio_local": 2.742,
+    "matched_n": 3390
+   }
+  },
+  "1km": {
+   "built": {
+    "mill": 0.1555,
+    "nomill": 0.0737,
+    "ratio": 2.108,
+    "mill_n": 527,
+    "nomill_n": 627,
+    "expected_local": 0.0708,
+    "obs_matched": 0.1555,
+    "ratio_local": 2.196,
+    "matched_n": 3390
+   },
+   "water": {
+    "mill": 0.0475,
+    "nomill": 0.0122,
+    "ratio": 3.883,
+    "mill_n": 161,
+    "nomill_n": 104,
+    "expected_local": 0.01,
+    "obs_matched": 0.0475,
+    "ratio_local": 4.73,
+    "matched_n": 3390
+   },
+   "wind": {
+    "mill": 0.0257,
+    "nomill": 0.0241,
+    "ratio": 1.064,
+    "mill_n": 87,
+    "nomill_n": 205,
+    "expected_local": 0.0334,
+    "obs_matched": 0.0257,
+    "ratio_local": 0.769,
+    "matched_n": 3390
+   },
+   "name": {
+    "mill": 0.0499,
+    "nomill": 0.0375,
+    "ratio": 1.329,
+    "mill_n": 169,
+    "nomill_n": 319,
+    "expected_local": 0.0257,
+    "obs_matched": 0.0499,
+    "ratio_local": 1.943,
+    "matched_n": 3390
+   },
+   "any": {
+    "mill": 0.1891,
+    "nomill": 0.1042,
+    "ratio": 1.814,
+    "mill_n": 641,
+    "nomill_n": 886,
+    "expected_local": 0.0909,
+    "obs_matched": 0.1891,
+    "ratio_local": 2.079,
+    "matched_n": 3390
+   }
+  },
+  "2km": {
+   "built": {
+    "mill": 0.3413,
+    "nomill": 0.2192,
+    "ratio": 1.557,
+    "mill_n": 1157,
+    "nomill_n": 1864,
+    "expected_local": 0.2037,
+    "obs_matched": 0.3413,
+    "ratio_local": 1.676,
+    "matched_n": 3390
+   },
+   "water": {
+    "mill": 0.1056,
+    "nomill": 0.0366,
+    "ratio": 2.887,
+    "mill_n": 358,
+    "nomill_n": 311,
+    "expected_local": 0.0269,
+    "obs_matched": 0.1056,
+    "ratio_local": 3.92,
+    "matched_n": 3390
+   },
+   "wind": {
+    "mill": 0.0702,
+    "nomill": 0.0753,
+    "ratio": 0.933,
+    "mill_n": 238,
+    "nomill_n": 640,
+    "expected_local": 0.0995,
+    "obs_matched": 0.0702,
+    "ratio_local": 0.706,
+    "matched_n": 3390
+   },
+   "name": {
+    "mill": 0.1398,
+    "nomill": 0.1224,
+    "ratio": 1.142,
+    "mill_n": 474,
+    "nomill_n": 1041,
+    "expected_local": 0.0803,
+    "obs_matched": 0.1398,
+    "ratio_local": 1.741,
+    "matched_n": 3390
+   },
+   "any": {
+    "mill": 0.4168,
+    "nomill": 0.3033,
+    "ratio": 1.374,
+    "mill_n": 1413,
+    "nomill_n": 2579,
+    "expected_local": 0.261,
+    "obs_matched": 0.4168,
+    "ratio_local": 1.597,
+    "matched_n": 3390
+   }
+  }
+ },
+ "curve": [
+  {
+   "km": 0.25,
+   "water_mill": 0.0053,
+   "water_nomill": 0.0011,
+   "wind_mill": 0.0032,
+   "wind_nomill": 0.002,
+   "name_mill": 0.0041,
+   "name_nomill": 0.0031,
+   "built_mill": 0.0177,
+   "built_nomill": 0.0062
+  },
+  {
+   "km": 0.5,
+   "water_mill": 0.0195,
+   "water_nomill": 0.0038,
+   "wind_mill": 0.0103,
+   "wind_nomill": 0.0078,
+   "name_mill": 0.015,
+   "name_nomill": 0.0109,
+   "built_mill": 0.0655,
+   "built_nomill": 0.0247
+  },
+  {
+   "km": 0.75,
+   "water_mill": 0.0336,
+   "water_nomill": 0.0079,
+   "wind_mill": 0.0198,
+   "wind_nomill": 0.0151,
+   "name_mill": 0.0301,
+   "name_nomill": 0.0229,
+   "built_mill": 0.1139,
+   "built_nomill": 0.0487
+  },
+  {
+   "km": 1,
+   "water_mill": 0.0475,
+   "water_nomill": 0.0122,
+   "wind_mill": 0.0257,
+   "wind_nomill": 0.0241,
+   "name_mill": 0.0499,
+   "name_nomill": 0.0375,
+   "built_mill": 0.1555,
+   "built_nomill": 0.0737
+  },
+  {
+   "km": 1.5,
+   "water_mill": 0.0752,
+   "water_nomill": 0.0221,
+   "wind_mill": 0.0445,
+   "wind_nomill": 0.0468,
+   "name_mill": 0.0917,
+   "name_nomill": 0.0774,
+   "built_mill": 0.2448,
+   "built_nomill": 0.136
+  },
+  {
+   "km": 2,
+   "water_mill": 0.1056,
+   "water_nomill": 0.0366,
+   "wind_mill": 0.0702,
+   "wind_nomill": 0.0753,
+   "name_mill": 0.1398,
+   "name_nomill": 0.1224,
+   "built_mill": 0.3413,
+   "built_nomill": 0.2192
+  },
+  {
+   "km": 3,
+   "water_mill": 0.1717,
+   "water_nomill": 0.0857,
+   "wind_mill": 0.1265,
+   "wind_nomill": 0.1415,
+   "name_mill": 0.2295,
+   "name_nomill": 0.2378,
+   "built_mill": 0.5103,
+   "built_nomill": 0.4068
+  },
+  {
+   "km": 4,
+   "water_mill": 0.2475,
+   "water_nomill": 0.1456,
+   "wind_mill": 0.2015,
+   "wind_nomill": 0.2185,
+   "name_mill": 0.3316,
+   "name_nomill": 0.362,
+   "built_mill": 0.6723,
+   "built_nomill": 0.5853
+  },
+  {
+   "km": 5,
+   "water_mill": 0.3233,
+   "water_nomill": 0.2169,
+   "wind_mill": 0.2897,
+   "wind_nomill": 0.2986,
+   "name_mill": 0.4504,
+   "name_nomill": 0.4898,
+   "built_mill": 0.7991,
+   "built_nomill": 0.7358
+  }
+ ],
+ "dose": [
+  {
+   "cls": "none",
+   "n": 8502,
+   "water1": 0.0122,
+   "any1": 0.1042,
+   "name1": 0.0375,
+   "wind1": 0.0241,
+   "built1": 0.0737
+  },
+  {
+   "cls": "part of a mill",
+   "n": 143,
+   "water1": 0.014,
+   "any1": 0.1329,
+   "name1": 0.0629,
+   "wind1": 0.014,
+   "built1": 0.0839
+  },
+  {
+   "cls": "1",
+   "n": 2037,
+   "water1": 0.0329,
+   "any1": 0.16,
+   "name1": 0.0442,
+   "wind1": 0.0241,
+   "built1": 0.1306
+  },
+  {
+   "cls": "2",
+   "n": 702,
+   "water1": 0.057,
+   "any1": 0.2151,
+   "name1": 0.0641,
+   "wind1": 0.0256,
+   "built1": 0.1724
+  },
+  {
+   "cls": "3 or more",
+   "n": 508,
+   "water1": 0.1024,
+   "any1": 0.2854,
+   "name1": 0.0492,
+   "wind1": 0.0354,
+   "built1": 0.252
+  }
+ ],
+ "dose_ratio_water_3plus_vs_none": 8.39,
+ "models_1km": {
+  "water": {
+   "or_": 3.59,
+   "lo": 2.62,
+   "hi": 4.92,
+   "p": 1.8308973444817932e-15,
+   "or_river": 0.24,
+   "n": 11573
+  },
+  "built": {
+   "or_": 1.95,
+   "lo": 1.68,
+   "hi": 2.27,
+   "p": 3.2847689968064497e-18,
+   "or_river": 0.38,
+   "n": 11835
+  },
+  "name": {
+   "or_": 1.69,
+   "lo": 1.33,
+   "hi": 2.15,
+   "p": 1.56582109571613e-05,
+   "or_river": 0.52,
+   "n": 11835
+  },
+  "wind": {
+   "or_": 0.75,
+   "lo": 0.57,
+   "hi": 1.0,
+   "p": 0.05059331470773576,
+   "or_river": 1.34,
+   "n": 10755
+  },
+  "any": {
+   "or_": 1.91,
+   "lo": 1.66,
+   "hi": 2.18,
+   "p": 1.6131397200200035e-20,
+   "or_river": 0.4,
+   "n": 11835
+  }
+ },
+ "setting": {
+  "river_m_mill": 399.0,
+  "river_m_nomill": 548.0,
+  "named_river_m_mill": 541.0,
+  "named_river_m_nomill": 847.0,
+  "within500_river_mill": 0.5971,
+  "within500_river_nomill": 0.4615,
+  "hh_mill": 27.0,
+  "hh_nomill": 9.0,
+  "relief_mill": 34.4,
+  "relief_nomill": 36.8
+ },
+ "counties_max_per100": {
+  "county": "Wiltshire",
+  "mills_per_100hh": 5.26
+ },
+ "counties": {
+  "n": 34,
+  "spearman": {
+   "traces_built": {
+    "rho": 0.3,
+    "p": 0.0800312101059852
+   },
+   "traces_water": {
+    "rho": 0.25,
+    "p": 0.15878121365303222
+   },
+   "traces_wind": {
+    "rho": 0.34,
+    "p": 0.052181850016526275
+   },
+   "mill_names": {
+    "rho": 0.14,
+    "p": 0.4165999564912909
+   },
+   "households1086": {
+    "rho": 0.82,
+    "p": 3.0175794602425078e-09
+   }
+  },
+  "rows": [
+   {
+    "code": "NFK",
+    "county": "Norfolk",
+    "mills1086": 528.0,
+    "mill_entries": 356,
+    "households1086": 25536.5,
+    "places": 609,
+    "mill_places": 248,
+    "traces_built": 174,
+    "traces_water": 20,
+    "traces_wind": 116,
+    "traces_textile": 0,
+    "mill_names": 47,
+    "mills_per_100hh": 2.07
+   },
+   {
+    "code": "LIN",
+    "county": "Lincolnshire",
+    "mills1086": 479.5,
+    "mill_entries": 308,
+    "households1086": 22346.93,
+    "places": 723,
+    "mill_places": 243,
+    "traces_built": 143,
+    "traces_water": 19,
+    "traces_wind": 77,
+    "traces_textile": 0,
+    "mill_names": 26,
+    "mills_per_100hh": 2.15
+   },
+   {
+    "code": "WIL",
+    "county": "Wiltshire",
+    "mills1086": 441.5,
+    "mill_entries": 251,
+    "households1086": 8398.0,
+    "places": 308,
+    "mill_places": 171,
+    "traces_built": 68,
+    "traces_water": 11,
+    "traces_wind": 9,
+    "traces_textile": 0,
+    "mill_names": 15,
+    "mills_per_100hh": 5.26
+   },
+   {
+    "code": "SOM",
+    "county": "Somerset",
+    "mills1086": 379.5,
+    "mill_entries": 272,
+    "households1086": 12071.0,
+    "places": 535,
+    "mill_places": 231,
+    "traces_built": 89,
+    "traces_water": 11,
+    "traces_wind": 14,
+    "traces_textile": 2,
+    "mill_names": 27,
+    "mills_per_100hh": 3.14
+   },
+   {
+    "code": "KEN",
+    "county": "Kent",
+    "mills1086": 345.75,
+    "mill_entries": 157,
+    "households1086": 11910.0,
+    "places": 317,
+    "mill_places": 133,
+    "traces_built": 130,
+    "traces_water": 15,
+    "traces_wind": 76,
+    "traces_textile": 0,
+    "mill_names": 38,
+    "mills_per_100hh": 2.9
+   },
+   {
+    "code": "HAM",
+    "county": "Hampshire",
+    "mills1086": 342.5,
+    "mill_entries": 197,
+    "households1086": 9177.5,
+    "places": 403,
+    "mill_places": 160,
+    "traces_built": 129,
+    "traces_water": 50,
+    "traces_wind": 12,
+    "traces_textile": 1,
+    "mill_names": 45,
+    "mills_per_100hh": 3.73
+   },
+   {
+    "code": "DOR",
+    "county": "Dorset",
+    "mills1086": 283.0,
+    "mill_entries": 187,
+    "households1086": 6531.0,
+    "places": 292,
+    "mill_places": 148,
+    "traces_built": 61,
+    "traces_water": 15,
+    "traces_wind": 3,
+    "traces_textile": 0,
+    "mill_names": 17,
+    "mills_per_100hh": 4.33
+   },
+   {
+    "code": "GLS",
+    "county": "Gloucestershire",
+    "mills1086": 267.5,
+    "mill_entries": 154,
+    "households1086": 8102.0,
+    "places": 336,
+    "mill_places": 150,
+    "traces_built": 126,
+    "traces_water": 27,
+    "traces_wind": 6,
+    "traces_textile": 1,
+    "mill_names": 32,
+    "mills_per_100hh": 3.3
+   },
+   {
+    "code": "NTH",
+    "county": "Northamptonshire",
+    "mills1086": 264.0,
+    "mill_entries": 204,
+    "households1086": 6518.0,
+    "places": 307,
+    "mill_places": 152,
+    "traces_built": 39,
+    "traces_water": 6,
+    "traces_wind": 14,
+    "traces_textile": 1,
+    "mill_names": 12,
+    "mills_per_100hh": 4.05
+   },
+   {
+    "code": "ESS",
+    "county": "Essex",
+    "mills1086": 241.5,
+    "mill_entries": 191,
+    "households1086": 11264.0,
+    "places": 381,
+    "mill_places": 129,
+    "traces_built": 131,
+    "traces_water": 15,
+    "traces_wind": 64,
+    "traces_textile": 0,
+    "mill_names": 36,
+    "mills_per_100hh": 2.14
+   },
+   {
+    "code": "SUF",
+    "county": "Suffolk",
+    "mills1086": 238.5,
+    "mill_entries": 204,
+    "households1086": 17417.0,
+    "places": 524,
+    "mill_places": 150,
+    "traces_built": 122,
+    "traces_water": 23,
+    "traces_wind": 67,
+    "traces_textile": 0,
+    "mill_names": 29,
+    "mills_per_100hh": 1.37
+   },
+   {
+    "code": "OXF",
+    "county": "Oxfordshire",
+    "mills1086": 196.5,
+    "mill_entries": 131,
+    "households1086": 6584.0,
+    "places": 250,
+    "mill_places": 114,
+    "traces_built": 51,
+    "traces_water": 8,
+    "traces_wind": 9,
+    "traces_textile": 0,
+    "mill_names": 12,
+    "mills_per_100hh": 2.98
+   },
+   {
+    "code": "SUS",
+    "county": "Sussex",
+    "mills1086": 167.5,
+    "mill_entries": 102,
+    "households1086": 9387.0,
+    "places": 307,
+    "mill_places": 85,
+    "traces_built": 155,
+    "traces_water": 18,
+    "traces_wind": 84,
+    "traces_textile": 0,
+    "mill_names": 76,
+    "mills_per_100hh": 1.78
+   },
+   {
+    "code": "BRK",
+    "county": "Berkshire",
+    "mills1086": 166.5,
+    "mill_entries": 121,
+    "households1086": 6024.0,
+    "places": 207,
+    "mill_places": 101,
+    "traces_built": 27,
+    "traces_water": 9,
+    "traces_wind": 1,
+    "traces_textile": 0,
+    "mill_names": 13,
+    "mills_per_100hh": 2.76
+   },
+   {
+    "code": "YKS",
+    "county": "Yorkshire",
+    "mills1086": 140.0,
+    "mill_entries": 104,
+    "households1086": 7762.94,
+    "places": 1753,
+    "mill_places": 106,
+    "traces_built": 430,
+    "traces_water": 47,
+    "traces_wind": 91,
+    "traces_textile": 15,
+    "mill_names": 320,
+    "mills_per_100hh": 1.8
+   },
+   {
+    "code": "BUK",
+    "county": "Buckinghamshire",
+    "mills1086": 135.0,
+    "mill_entries": 95,
+    "households1086": 4876.0,
+    "places": 210,
+    "mill_places": 81,
+    "traces_built": 32,
+    "traces_water": 4,
+    "traces_wind": 20,
+    "traces_textile": 0,
+    "mill_names": 13,
+    "mills_per_100hh": 2.77
+   },
+   {
+    "code": "NTT",
+    "county": "Nottinghamshire",
+    "mills1086": 133.5,
+    "mill_entries": 93,
+    "households1086": 5477.14,
+    "places": 275,
+    "mill_places": 80,
+    "traces_built": 58,
+    "traces_water": 9,
+    "traces_wind": 28,
+    "traces_textile": 0,
+    "mill_names": 15,
+    "mills_per_100hh": 2.44
+   },
+   {
+    "code": "LEC",
+    "county": "Leicestershire",
+    "mills1086": 131.0,
+    "mill_entries": 97,
+    "households1086": 6319.0,
+    "places": 262,
+    "mill_places": 83,
+    "traces_built": 34,
+    "traces_water": 5,
+    "traces_wind": 13,
+    "traces_textile": 0,
+    "mill_names": 14,
+    "mills_per_100hh": 2.07
+   },
+   {
+    "code": "HRT",
+    "county": "Hertfordshire",
+    "mills1086": 129.0,
+    "mill_entries": 80,
+    "households1086": 4408.5,
+    "places": 157,
+    "mill_places": 68,
+    "traces_built": 57,
+    "traces_water": 15,
+    "traces_wind": 25,
+    "traces_textile": 1,
+    "mill_names": 23,
+    "mills_per_100hh": 2.93
+   },
+   {
+    "code": "CAM",
+    "county": "Cambridgeshire",
+    "mills1086": 128.0,
+    "mill_entries": 85,
+    "households1086": 4385.5,
+    "places": 135,
+    "mill_places": 49,
+    "traces_built": 78,
+    "traces_water": 10,
+    "traces_wind": 52,
+    "traces_textile": 0,
+    "mill_names": 12,
+    "mills_per_100hh": 2.92
+   },
+   {
+    "code": "WAR",
+    "county": "Warwickshire",
+    "mills1086": 125.0,
+    "mill_entries": 101,
+    "households1086": 6320.0,
+    "places": 265,
+    "mill_places": 99,
+    "traces_built": 52,
+    "traces_water": 10,
+    "traces_wind": 20,
+    "traces_textile": 0,
+    "mill_names": 27,
+    "mills_per_100hh": 1.98
+   },
+   {
+    "code": "HEF",
+    "county": "Herefordshire",
+    "mills1086": 117.5,
+    "mill_entries": 80,
+    "households1086": 4186.0,
+    "places": 273,
+    "mill_places": 65,
+    "traces_built": 52,
+    "traces_water": 5,
+    "traces_wind": 3,
+    "traces_textile": 1,
+    "mill_names": 26,
+    "mills_per_100hh": 2.81
+   },
+   {
+    "code": "SUR",
+    "county": "Surrey",
+    "mills1086": 117.5,
+    "mill_entries": 75,
+    "households1086": 3930.5,
+    "places": 139,
+    "mill_places": 65,
+    "traces_built": 61,
+    "traces_water": 9,
+    "traces_wind": 27,
+    "traces_textile": 0,
+    "mill_names": 28,
+    "mills_per_100hh": 2.99
+   },
+   {
+    "code": "WOR",
+    "county": "Worcestershire",
+    "mills1086": 114.5,
+    "mill_entries": 71,
+    "households1086": 4107.08,
+    "places": 200,
+    "mill_places": 64,
+    "traces_built": 49,
+    "traces_water": 7,
+    "traces_wind": 7,
+    "traces_textile": 0,
+    "mill_names": 17,
+    "mills_per_100hh": 2.79
+   },
+   {
+    "code": "BDF",
+    "county": "Bedfordshire",
+    "mills1086": 102.5,
+    "mill_entries": 82,
+    "households1086": 3483.5,
+    "places": 141,
+    "mill_places": 65,
+    "traces_built": 33,
+    "traces_water": 10,
+    "traces_wind": 14,
+    "traces_textile": 0,
+    "mill_names": 4,
+    "mills_per_100hh": 2.94
+   },
+   {
+    "code": "DBY",
+    "county": "Derbyshire",
+    "mills1086": 96.0,
+    "mill_entries": 64,
+    "households1086": 3017.0,
+    "places": 211,
+    "mill_places": 60,
+    "traces_built": 92,
+    "traces_water": 25,
+    "traces_wind": 12,
+    "traces_textile": 6,
+    "mill_names": 56,
+    "mills_per_100hh": 3.18
+   },
+   {
+    "code": "DEV",
+    "county": "Devon",
+    "mills1086": 95.5,
+    "mill_entries": 81,
+    "households1086": 15894.0,
+    "places": 851,
+    "mill_places": 77,
+    "traces_built": 138,
+    "traces_water": 26,
+    "traces_wind": 11,
+    "traces_textile": 0,
+    "mill_names": 91,
+    "mills_per_100hh": 0.6
+   },
+   {
+    "code": "SHR",
+    "county": "Shropshire",
+    "mills1086": 92.0,
+    "mill_entries": 85,
+    "households1086": 4562.5,
+    "places": 405,
+    "mill_places": 84,
+    "traces_built": 83,
+    "traces_water": 17,
+    "traces_wind": 12,
+    "traces_textile": 4,
+    "mill_names": 20,
+    "mills_per_100hh": 2.02
+   },
+   {
+    "code": "STS",
+    "county": "Staffordshire",
+    "mills1086": 67.0,
+    "mill_entries": 57,
+    "households1086": 2834.8,
+    "places": 265,
+    "mill_places": 48,
+    "traces_built": 72,
+    "traces_water": 8,
+    "traces_wind": 16,
+    "traces_textile": 2,
+    "mill_names": 40,
+    "mills_per_100hh": 2.36
+   },
+   {
+    "code": "HUN",
+    "county": "Huntingdonshire",
+    "mills1086": 36.0,
+    "mill_entries": 25,
+    "households1086": 2722.0,
+    "places": 84,
+    "mill_places": 24,
+    "traces_built": 23,
+    "traces_water": 8,
+    "traces_wind": 8,
+    "traces_textile": 0,
+    "mill_names": 4,
+    "mills_per_100hh": 1.32
+   },
+   {
+    "code": "MDX",
+    "county": "Middlesex",
+    "mills1086": 33.5,
+    "mill_entries": 17,
+    "households1086": 1947.0,
+    "places": 57,
+    "mill_places": 13,
+    "traces_built": 6,
+    "traces_water": 2,
+    "traces_wind": 4,
+    "traces_textile": 0,
+    "mill_names": 2,
+    "mills_per_100hh": 1.72
+   },
+   {
+    "code": "CHS",
+    "county": "Cheshire",
+    "mills1086": 22.0,
+    "mill_entries": 21,
+    "households1086": 1906.16,
+    "places": 381,
+    "mill_places": 23,
+    "traces_built": 242,
+    "traces_water": 24,
+    "traces_wind": 26,
+    "traces_textile": 78,
+    "mill_names": 90,
+    "mills_per_100hh": 1.15
+   },
+   {
+    "code": "RUT",
+    "county": "Rutland",
+    "mills1086": 9.0,
+    "mill_entries": 7,
+    "households1086": 1463.5,
+    "places": 33,
+    "mill_places": 16,
+    "traces_built": 8,
+    "traces_water": 0,
+    "traces_wind": 7,
+    "traces_textile": 0,
+    "mill_names": 3,
+    "mills_per_100hh": 0.61
+   },
+   {
+    "code": "CON",
+    "county": "Cornwall",
+    "mills1086": 6.0,
+    "mill_entries": 5,
+    "households1086": 5150.0,
+    "places": 296,
+    "mill_places": 5,
+    "traces_built": 139,
+    "traces_water": 28,
+    "traces_wind": 6,
+    "traces_textile": 0,
+    "mill_names": 34,
+    "mills_per_100hh": 0.12
+   }
+  ],
+  "top": [
+   "Norfolk",
+   "Lincolnshire",
+   "Wiltshire",
+   "Somerset",
+   "Kent"
+  ],
+  "by_name": {
+   "Norfolk": {
+    "code": "NFK",
+    "county": "Norfolk",
+    "mills1086": 528.0,
+    "mill_entries": 356,
+    "households1086": 25536.5,
+    "places": 609,
+    "mill_places": 248,
+    "traces_built": 174,
+    "traces_water": 20,
+    "traces_wind": 116,
+    "traces_textile": 0,
+    "mill_names": 47,
+    "mills_per_100hh": 2.07
+   },
+   "Lincolnshire": {
+    "code": "LIN",
+    "county": "Lincolnshire",
+    "mills1086": 479.5,
+    "mill_entries": 308,
+    "households1086": 22346.93,
+    "places": 723,
+    "mill_places": 243,
+    "traces_built": 143,
+    "traces_water": 19,
+    "traces_wind": 77,
+    "traces_textile": 0,
+    "mill_names": 26,
+    "mills_per_100hh": 2.15
+   },
+   "Wiltshire": {
+    "code": "WIL",
+    "county": "Wiltshire",
+    "mills1086": 441.5,
+    "mill_entries": 251,
+    "households1086": 8398.0,
+    "places": 308,
+    "mill_places": 171,
+    "traces_built": 68,
+    "traces_water": 11,
+    "traces_wind": 9,
+    "traces_textile": 0,
+    "mill_names": 15,
+    "mills_per_100hh": 5.26
+   },
+   "Somerset": {
+    "code": "SOM",
+    "county": "Somerset",
+    "mills1086": 379.5,
+    "mill_entries": 272,
+    "households1086": 12071.0,
+    "places": 535,
+    "mill_places": 231,
+    "traces_built": 89,
+    "traces_water": 11,
+    "traces_wind": 14,
+    "traces_textile": 2,
+    "mill_names": 27,
+    "mills_per_100hh": 3.14
+   },
+   "Kent": {
+    "code": "KEN",
+    "county": "Kent",
+    "mills1086": 345.75,
+    "mill_entries": 157,
+    "households1086": 11910.0,
+    "places": 317,
+    "mill_places": 133,
+    "traces_built": 130,
+    "traces_water": 15,
+    "traces_wind": 76,
+    "traces_textile": 0,
+    "mill_names": 38,
+    "mills_per_100hh": 2.9
+   },
+   "Hampshire": {
+    "code": "HAM",
+    "county": "Hampshire",
+    "mills1086": 342.5,
+    "mill_entries": 197,
+    "households1086": 9177.5,
+    "places": 403,
+    "mill_places": 160,
+    "traces_built": 129,
+    "traces_water": 50,
+    "traces_wind": 12,
+    "traces_textile": 1,
+    "mill_names": 45,
+    "mills_per_100hh": 3.73
+   },
+   "Dorset": {
+    "code": "DOR",
+    "county": "Dorset",
+    "mills1086": 283.0,
+    "mill_entries": 187,
+    "households1086": 6531.0,
+    "places": 292,
+    "mill_places": 148,
+    "traces_built": 61,
+    "traces_water": 15,
+    "traces_wind": 3,
+    "traces_textile": 0,
+    "mill_names": 17,
+    "mills_per_100hh": 4.33
+   },
+   "Gloucestershire": {
+    "code": "GLS",
+    "county": "Gloucestershire",
+    "mills1086": 267.5,
+    "mill_entries": 154,
+    "households1086": 8102.0,
+    "places": 336,
+    "mill_places": 150,
+    "traces_built": 126,
+    "traces_water": 27,
+    "traces_wind": 6,
+    "traces_textile": 1,
+    "mill_names": 32,
+    "mills_per_100hh": 3.3
+   },
+   "Northamptonshire": {
+    "code": "NTH",
+    "county": "Northamptonshire",
+    "mills1086": 264.0,
+    "mill_entries": 204,
+    "households1086": 6518.0,
+    "places": 307,
+    "mill_places": 152,
+    "traces_built": 39,
+    "traces_water": 6,
+    "traces_wind": 14,
+    "traces_textile": 1,
+    "mill_names": 12,
+    "mills_per_100hh": 4.05
+   },
+   "Essex": {
+    "code": "ESS",
+    "county": "Essex",
+    "mills1086": 241.5,
+    "mill_entries": 191,
+    "households1086": 11264.0,
+    "places": 381,
+    "mill_places": 129,
+    "traces_built": 131,
+    "traces_water": 15,
+    "traces_wind": 64,
+    "traces_textile": 0,
+    "mill_names": 36,
+    "mills_per_100hh": 2.14
+   },
+   "Suffolk": {
+    "code": "SUF",
+    "county": "Suffolk",
+    "mills1086": 238.5,
+    "mill_entries": 204,
+    "households1086": 17417.0,
+    "places": 524,
+    "mill_places": 150,
+    "traces_built": 122,
+    "traces_water": 23,
+    "traces_wind": 67,
+    "traces_textile": 0,
+    "mill_names": 29,
+    "mills_per_100hh": 1.37
+   },
+   "Oxfordshire": {
+    "code": "OXF",
+    "county": "Oxfordshire",
+    "mills1086": 196.5,
+    "mill_entries": 131,
+    "households1086": 6584.0,
+    "places": 250,
+    "mill_places": 114,
+    "traces_built": 51,
+    "traces_water": 8,
+    "traces_wind": 9,
+    "traces_textile": 0,
+    "mill_names": 12,
+    "mills_per_100hh": 2.98
+   },
+   "Sussex": {
+    "code": "SUS",
+    "county": "Sussex",
+    "mills1086": 167.5,
+    "mill_entries": 102,
+    "households1086": 9387.0,
+    "places": 307,
+    "mill_places": 85,
+    "traces_built": 155,
+    "traces_water": 18,
+    "traces_wind": 84,
+    "traces_textile": 0,
+    "mill_names": 76,
+    "mills_per_100hh": 1.78
+   },
+   "Berkshire": {
+    "code": "BRK",
+    "county": "Berkshire",
+    "mills1086": 166.5,
+    "mill_entries": 121,
+    "households1086": 6024.0,
+    "places": 207,
+    "mill_places": 101,
+    "traces_built": 27,
+    "traces_water": 9,
+    "traces_wind": 1,
+    "traces_textile": 0,
+    "mill_names": 13,
+    "mills_per_100hh": 2.76
+   },
+   "Yorkshire": {
+    "code": "YKS",
+    "county": "Yorkshire",
+    "mills1086": 140.0,
+    "mill_entries": 104,
+    "households1086": 7762.94,
+    "places": 1753,
+    "mill_places": 106,
+    "traces_built": 430,
+    "traces_water": 47,
+    "traces_wind": 91,
+    "traces_textile": 15,
+    "mill_names": 320,
+    "mills_per_100hh": 1.8
+   },
+   "Buckinghamshire": {
+    "code": "BUK",
+    "county": "Buckinghamshire",
+    "mills1086": 135.0,
+    "mill_entries": 95,
+    "households1086": 4876.0,
+    "places": 210,
+    "mill_places": 81,
+    "traces_built": 32,
+    "traces_water": 4,
+    "traces_wind": 20,
+    "traces_textile": 0,
+    "mill_names": 13,
+    "mills_per_100hh": 2.77
+   },
+   "Nottinghamshire": {
+    "code": "NTT",
+    "county": "Nottinghamshire",
+    "mills1086": 133.5,
+    "mill_entries": 93,
+    "households1086": 5477.14,
+    "places": 275,
+    "mill_places": 80,
+    "traces_built": 58,
+    "traces_water": 9,
+    "traces_wind": 28,
+    "traces_textile": 0,
+    "mill_names": 15,
+    "mills_per_100hh": 2.44
+   },
+   "Leicestershire": {
+    "code": "LEC",
+    "county": "Leicestershire",
+    "mills1086": 131.0,
+    "mill_entries": 97,
+    "households1086": 6319.0,
+    "places": 262,
+    "mill_places": 83,
+    "traces_built": 34,
+    "traces_water": 5,
+    "traces_wind": 13,
+    "traces_textile": 0,
+    "mill_names": 14,
+    "mills_per_100hh": 2.07
+   },
+   "Hertfordshire": {
+    "code": "HRT",
+    "county": "Hertfordshire",
+    "mills1086": 129.0,
+    "mill_entries": 80,
+    "households1086": 4408.5,
+    "places": 157,
+    "mill_places": 68,
+    "traces_built": 57,
+    "traces_water": 15,
+    "traces_wind": 25,
+    "traces_textile": 1,
+    "mill_names": 23,
+    "mills_per_100hh": 2.93
+   },
+   "Cambridgeshire": {
+    "code": "CAM",
+    "county": "Cambridgeshire",
+    "mills1086": 128.0,
+    "mill_entries": 85,
+    "households1086": 4385.5,
+    "places": 135,
+    "mill_places": 49,
+    "traces_built": 78,
+    "traces_water": 10,
+    "traces_wind": 52,
+    "traces_textile": 0,
+    "mill_names": 12,
+    "mills_per_100hh": 2.92
+   },
+   "Warwickshire": {
+    "code": "WAR",
+    "county": "Warwickshire",
+    "mills1086": 125.0,
+    "mill_entries": 101,
+    "households1086": 6320.0,
+    "places": 265,
+    "mill_places": 99,
+    "traces_built": 52,
+    "traces_water": 10,
+    "traces_wind": 20,
+    "traces_textile": 0,
+    "mill_names": 27,
+    "mills_per_100hh": 1.98
+   },
+   "Herefordshire": {
+    "code": "HEF",
+    "county": "Herefordshire",
+    "mills1086": 117.5,
+    "mill_entries": 80,
+    "households1086": 4186.0,
+    "places": 273,
+    "mill_places": 65,
+    "traces_built": 52,
+    "traces_water": 5,
+    "traces_wind": 3,
+    "traces_textile": 1,
+    "mill_names": 26,
+    "mills_per_100hh": 2.81
+   },
+   "Surrey": {
+    "code": "SUR",
+    "county": "Surrey",
+    "mills1086": 117.5,
+    "mill_entries": 75,
+    "households1086": 3930.5,
+    "places": 139,
+    "mill_places": 65,
+    "traces_built": 61,
+    "traces_water": 9,
+    "traces_wind": 27,
+    "traces_textile": 0,
+    "mill_names": 28,
+    "mills_per_100hh": 2.99
+   },
+   "Worcestershire": {
+    "code": "WOR",
+    "county": "Worcestershire",
+    "mills1086": 114.5,
+    "mill_entries": 71,
+    "households1086": 4107.08,
+    "places": 200,
+    "mill_places": 64,
+    "traces_built": 49,
+    "traces_water": 7,
+    "traces_wind": 7,
+    "traces_textile": 0,
+    "mill_names": 17,
+    "mills_per_100hh": 2.79
+   },
+   "Bedfordshire": {
+    "code": "BDF",
+    "county": "Bedfordshire",
+    "mills1086": 102.5,
+    "mill_entries": 82,
+    "households1086": 3483.5,
+    "places": 141,
+    "mill_places": 65,
+    "traces_built": 33,
+    "traces_water": 10,
+    "traces_wind": 14,
+    "traces_textile": 0,
+    "mill_names": 4,
+    "mills_per_100hh": 2.94
+   },
+   "Derbyshire": {
+    "code": "DBY",
+    "county": "Derbyshire",
+    "mills1086": 96.0,
+    "mill_entries": 64,
+    "households1086": 3017.0,
+    "places": 211,
+    "mill_places": 60,
+    "traces_built": 92,
+    "traces_water": 25,
+    "traces_wind": 12,
+    "traces_textile": 6,
+    "mill_names": 56,
+    "mills_per_100hh": 3.18
+   },
+   "Devon": {
+    "code": "DEV",
+    "county": "Devon",
+    "mills1086": 95.5,
+    "mill_entries": 81,
+    "households1086": 15894.0,
+    "places": 851,
+    "mill_places": 77,
+    "traces_built": 138,
+    "traces_water": 26,
+    "traces_wind": 11,
+    "traces_textile": 0,
+    "mill_names": 91,
+    "mills_per_100hh": 0.6
+   },
+   "Shropshire": {
+    "code": "SHR",
+    "county": "Shropshire",
+    "mills1086": 92.0,
+    "mill_entries": 85,
+    "households1086": 4562.5,
+    "places": 405,
+    "mill_places": 84,
+    "traces_built": 83,
+    "traces_water": 17,
+    "traces_wind": 12,
+    "traces_textile": 4,
+    "mill_names": 20,
+    "mills_per_100hh": 2.02
+   },
+   "Staffordshire": {
+    "code": "STS",
+    "county": "Staffordshire",
+    "mills1086": 67.0,
+    "mill_entries": 57,
+    "households1086": 2834.8,
+    "places": 265,
+    "mill_places": 48,
+    "traces_built": 72,
+    "traces_water": 8,
+    "traces_wind": 16,
+    "traces_textile": 2,
+    "mill_names": 40,
+    "mills_per_100hh": 2.36
+   },
+   "Huntingdonshire": {
+    "code": "HUN",
+    "county": "Huntingdonshire",
+    "mills1086": 36.0,
+    "mill_entries": 25,
+    "households1086": 2722.0,
+    "places": 84,
+    "mill_places": 24,
+    "traces_built": 23,
+    "traces_water": 8,
+    "traces_wind": 8,
+    "traces_textile": 0,
+    "mill_names": 4,
+    "mills_per_100hh": 1.32
+   },
+   "Middlesex": {
+    "code": "MDX",
+    "county": "Middlesex",
+    "mills1086": 33.5,
+    "mill_entries": 17,
+    "households1086": 1947.0,
+    "places": 57,
+    "mill_places": 13,
+    "traces_built": 6,
+    "traces_water": 2,
+    "traces_wind": 4,
+    "traces_textile": 0,
+    "mill_names": 2,
+    "mills_per_100hh": 1.72
+   },
+   "Cheshire": {
+    "code": "CHS",
+    "county": "Cheshire",
+    "mills1086": 22.0,
+    "mill_entries": 21,
+    "households1086": 1906.16,
+    "places": 381,
+    "mill_places": 23,
+    "traces_built": 242,
+    "traces_water": 24,
+    "traces_wind": 26,
+    "traces_textile": 78,
+    "mill_names": 90,
+    "mills_per_100hh": 1.15
+   },
+   "Rutland": {
+    "code": "RUT",
+    "county": "Rutland",
+    "mills1086": 9.0,
+    "mill_entries": 7,
+    "households1086": 1463.5,
+    "places": 33,
+    "mill_places": 16,
+    "traces_built": 8,
+    "traces_water": 0,
+    "traces_wind": 7,
+    "traces_textile": 0,
+    "mill_names": 3,
+    "mills_per_100hh": 0.61
+   },
+   "Cornwall": {
+    "code": "CON",
+    "county": "Cornwall",
+    "mills1086": 6.0,
+    "mill_entries": 5,
+    "households1086": 5150.0,
+    "places": 296,
+    "mill_places": 5,
+    "traces_built": 139,
+    "traces_water": 28,
+    "traces_wind": 6,
+    "traces_textile": 0,
+    "mill_names": 34,
+    "mills_per_100hh": 0.12
+   }
+  }
+ },
+ "textile": {
+  "textile": {
+   "n": 113,
+   "med_km": 20.38,
+   "within1": 0.0531,
+   "within2": 0.0619,
+   "med_place_km": 1.62,
+   "river_m": 215.0,
+   "elev_m": 74.3,
+   "relief_m": 39.2,
+   "regions": {
+    "North West": 84,
+    "Yorkshire and the Humber": 10,
+    "East Midlands": 7,
+    "West Midlands": 7,
+    "South West": 3,
+    "Eastern": 1,
+    "South East": 1
+   }
+  },
+  "water": {
+   "n": 526,
+   "med_km": 1.64,
+   "within1": 0.3251,
+   "within2": 0.5665,
+   "med_place_km": 0.96,
+   "river_m": 19.0,
+   "elev_m": 49.5,
+   "relief_m": 37.4,
+   "regions": {
+    "South West": 114,
+    "South East": 113,
+    "Eastern": 100,
+    "East Midlands": 61,
+    "West Midlands": 44,
+    "North West": 41,
+    "Yorkshire and the Humber": 40,
+    "North East": 9,
+    "London": 4
+   }
+  },
+  "wind": {
+   "n": 975,
+   "med_km": 3.39,
+   "within1": 0.1231,
+   "within2": 0.3087,
+   "med_place_km": 1.15,
+   "river_m": 736.0,
+   "elev_m": 48.0,
+   "relief_m": 27.5,
+   "regions": {
+    "Eastern": 343,
+    "South East": 216,
+    "East Midlands": 131,
+    "Yorkshire and the Humber": 90,
+    "West Midlands": 58,
+    "South West": 48,
+    "North West": 41,
+    "London": 25,
+    "North East": 23
+   }
+  },
+  "mill": {
+   "n": 1590,
+   "med_km": 3.12,
+   "within1": 0.2113,
+   "within2": 0.3943,
+   "med_place_km": 1.12,
+   "river_m": 34.0,
+   "elev_m": 68.4,
+   "relief_m": 46.5,
+   "regions": {
+    "South West": 432,
+    "Yorkshire and the Humber": 243,
+    "South East": 230,
+    "West Midlands": 178,
+    "Eastern": 169,
+    "North West": 160,
+    "East Midlands": 130,
+    "North East": 41,
+    "London": 7
+   }
+  },
+  "north_share": 0.8319,
+  "river100": {
+   "textile": 0.3451,
+   "water": 0.8897,
+   "wind": 0.1056,
+   "mill": 0.761
+  },
+  "north_west_n": 84,
+  "north": {
+   "textile": {
+    "n": 94,
+    "med_km": 22.45,
+    "within2": 0.0
+   },
+   "water": {
+    "n": 81,
+    "med_km": 8.06,
+    "within2": 0.1728
+   },
+   "wind": {
+    "n": 131,
+    "med_km": 5.97,
+    "within2": 0.1985
+   },
+   "mill": {
+    "n": 403,
+    "med_km": 19.07,
+    "within2": 0.0993
+   },
+   "p_textile_vs_water": 0.0006219023637290659
+  },
+  "in_coverage": {
+   "n": 85,
+   "within2": 0.0824,
+   "med_km": 15.5
+  },
+  "water_in_coverage": {
+   "n": 495,
+   "within2": 0.602,
+   "med_km": 1.52
+  },
+  "domesday_mill_places": {
+   "river_m": 399.0,
+   "elev_m": 60.849999999999994,
+   "relief_m": 34.4
+  },
+  "bands": {
+   "edges": [
+    0,
+    1,
+    2,
+    5,
+    10,
+    20,
+    50,
+    1000
+   ],
+   "textile": [
+    0.0531,
+    0.0088,
+    0.1062,
+    0.0177,
+    0.3097,
+    0.469,
+    0.0354
+   ],
+   "water": [
+    0.3251,
+    0.2414,
+    0.1825,
+    0.1179,
+    0.0608,
+    0.0209,
+    0.0513
+   ],
+   "wind": [
+    0.1231,
+    0.1856,
+    0.3713,
+    0.2041,
+    0.0574,
+    0.0318,
+    0.0267
+   ],
+   "mill": [
+    0.2101,
+    0.1843,
+    0.2214,
+    0.1038,
+    0.122,
+    0.1113,
+    0.0472
+   ]
+  },
+  "closest": [
+   {
+    "name": "Former Flax Mill Or Granary, About 20 Metres South Of Nos 3,5 And 7",
+    "place": "[South] Petherton",
+    "km": 0.2,
+    "source": "Wikidata"
+   },
+   {
+    "name": "The Silk Mill",
+    "place": "Tring",
+    "km": 0.39,
+    "source": "Wikidata"
+   },
+   {
+    "name": "Pinsley Mill",
+    "place": "Leominster",
+    "km": 0.75,
+    "source": "Wikidata"
+   },
+   {
+    "name": "The Old Silk Mill",
+    "place": "[Chipping] Campden",
+    "km": 0.75,
+    "source": "Wikidata"
+   },
+   {
+    "name": "Whitchurch Silk Mill",
+    "place": "Whitchurch",
+    "km": 0.76,
+    "source": "Wikidata"
+   },
+   {
+    "name": "Top Mill Building, About 110 Metres South East Of Lodge, Higher Flax Mills",
+    "place": "[Castle] Cary",
+    "km": 0.96,
+    "source": "Wikidata"
+   },
+   {
+    "name": "Old Mill",
+    "place": "Drayton [Bassett]",
+    "km": 1.45,
+    "source": "Wikidata"
+   },
+   {
+    "name": "Marvel's Mill",
+    "place": "Dallington",
+    "km": 2.06,
+    "source": "Wikidata"
+   }
+  ],
+  "farthest_example": [
+   {
+    "name": "Dixon's Chimney and Shaddon Mill",
+    "km": 92.3
+   },
+   {
+    "name": "Block 2, Moor Lane Mills North",
+    "km": 76.8
+   },
+   {
+    "name": "Mill 1, Moor Lane Mills South",
+    "km": 76.7
+   },
+   {
+    "name": "Kirk Mill",
+    "km": 58.6
+   },
+   {
+    "name": "Centenary Mill",
+    "km": 47.8
+   }
+  ]
+ },
+ "region_domesday": {
+  "East Midlands": {
+   "places": 1693,
+   "mill_places": 594,
+   "mills": 1004.2
+  },
+  "Eastern": {
+   "places": 2026,
+   "mill_places": 732,
+   "mills": 1213.0
+  },
+  "London": {
+   "places": 125,
+   "mill_places": 46,
+   "mills": 107.5
+  },
+  "North East": {
+   "places": 74,
+   "mill_places": 3,
+   "mills": 1.0
+  },
+  "North West": {
+   "places": 337,
+   "mill_places": 15,
+   "mills": 15.0
+  },
+  "South East": {
+   "places": 1779,
+   "mill_places": 713,
+   "mills": 1350.8
+  },
+  "South West": {
+   "places": 2616,
+   "mill_places": 782,
+   "mills": 1325.5
+  },
+  "West Midlands": {
+   "places": 1383,
+   "mill_places": 361,
+   "mills": 483.3
+  },
+  "Yorkshire and the Humber": {
+   "places": 1757,
+   "mill_places": 134,
+   "mills": 175.0
+  }
+ },
+ "top_places": [
+  {
+   "name": "Derby",
+   "county": "Derbyshire",
+   "mills": 25.0,
+   "hh": 389,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 1226
+  },
+  {
+   "name": "Leominster",
+   "county": "Herefordshire",
+   "mills": 18.0,
+   "hh": 788,
+   "water1": false,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 747
+  },
+  {
+   "name": "Westgate",
+   "county": "Kent",
+   "mills": 17.0,
+   "hh": 140,
+   "water1": false,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 815
+  },
+  {
+   "name": "Tealby",
+   "county": "Lincolnshire",
+   "mills": 16.5,
+   "hh": 52,
+   "water1": true,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 667
+  },
+  {
+   "name": "[West] Ham",
+   "county": "Essex",
+   "mills": 16.0,
+   "hh": 260,
+   "water1": false,
+   "built1": false,
+   "name1": true,
+   "nearest_built_m": 1360
+  },
+  {
+   "name": "Snettisham",
+   "county": "Norfolk",
+   "mills": 15.0,
+   "hh": 283,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 1753
+  },
+  {
+   "name": "Louth",
+   "county": "Lincolnshire",
+   "mills": 13.0,
+   "hh": 122,
+   "water1": true,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 102
+  },
+  {
+   "name": "Chippenham",
+   "county": "Wiltshire",
+   "mills": 12.5,
+   "hh": 154,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 4097
+  },
+  {
+   "name": "[Temple] Ewell",
+   "county": "Kent",
+   "mills": 12.0,
+   "hh": 58,
+   "water1": false,
+   "built1": false,
+   "name1": true,
+   "nearest_built_m": 1813
+  },
+  {
+   "name": "Dorchester",
+   "county": "Dorset",
+   "mills": 12.0,
+   "hh": 223,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 1475
+  },
+  {
+   "name": "Sherborne",
+   "county": "Dorset",
+   "mills": 12.0,
+   "hh": 239,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 1159
+  },
+  {
+   "name": "Blockley",
+   "county": "Gloucestershire",
+   "mills": 12.0,
+   "hh": 107,
+   "water1": false,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 279
+  },
+  {
+   "name": "Folkestone",
+   "county": "Kent",
+   "mills": 11.5,
+   "hh": 395,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 6020
+  },
+  {
+   "name": "Empingham",
+   "county": "Rutland",
+   "mills": 11.5,
+   "hh": 101,
+   "water1": false,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 333
+  },
+  {
+   "name": "Bosham",
+   "county": "Sussex",
+   "mills": 11.0,
+   "hh": 194,
+   "water1": true,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 727
+  },
+  {
+   "name": "Lewisham",
+   "county": "Kent",
+   "mills": 11.0,
+   "hh": 62,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 5506
+  },
+  {
+   "name": "Berkeley",
+   "county": "Gloucestershire",
+   "mills": 10.0,
+   "hh": 579,
+   "water1": true,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 925
+  },
+  {
+   "name": "Alresford",
+   "county": "Hampshire",
+   "mills": 10.0,
+   "hh": 157,
+   "water1": true,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 388
+  },
+  {
+   "name": "Sturry",
+   "county": "Kent",
+   "mills": 10.0,
+   "hh": 71,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 2894
+  },
+  {
+   "name": "Ramsbury",
+   "county": "Wiltshire",
+   "mills": 10.0,
+   "hh": 156,
+   "water1": false,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 259
+  },
+  {
+   "name": "Nettleton",
+   "county": "Lincolnshire",
+   "mills": 9.0,
+   "hh": 53,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 1069
+  },
+  {
+   "name": "Tilshead",
+   "county": "Wiltshire",
+   "mills": 9.0,
+   "hh": 154,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 9198
+  },
+  {
+   "name": "Saltwood",
+   "county": "Kent",
+   "mills": 9.0,
+   "hh": 272,
+   "water1": false,
+   "built1": false,
+   "name1": true,
+   "nearest_built_m": 1278
+  },
+  {
+   "name": "[Tattershall] Thorpe",
+   "county": "Lincolnshire",
+   "mills": 9.0,
+   "hh": 103,
+   "water1": false,
+   "built1": false,
+   "name1": false,
+   "nearest_built_m": 4900
+  },
+  {
+   "name": "Calne",
+   "county": "Wiltshire",
+   "mills": 9.0,
+   "hh": 219,
+   "water1": false,
+   "built1": true,
+   "name1": false,
+   "nearest_built_m": 708
+  }
+ ],
+ "examples": {
+  "Alresford": {
+   "mills": 10.0,
+   "hh": 157,
+   "d_water_m": 388,
+   "d_built_m": 388,
+   "d_name_m": 2402
+  },
+  "Derby": {
+   "mills": 25.0,
+   "hh": 389,
+   "d_water_m": 10698,
+   "d_built_m": 1226,
+   "d_name_m": 1482
+  },
+  "Bosham": {
+   "mills": 11.0,
+   "hh": 194,
+   "d_water_m": 727,
+   "d_built_m": 727,
+   "d_name_m": 1055
+  },
+  "Louth": {
+   "mills": 13.0,
+   "hh": 122,
+   "d_water_m": 102,
+   "d_built_m": 102,
+   "d_name_m": 12517
+  },
+  "Tealby": {
+   "mills": 16.5,
+   "hh": 52,
+   "d_water_m": 667,
+   "d_built_m": 667,
+   "d_name_m": 2840
+  },
+  "Leominster": {
+   "mills": 18.0,
+   "hh": 788,
+   "d_water_m": 1260,
+   "d_built_m": 747,
+   "d_name_m": 8010
+  }
+ },
+ "top_places_n": 25,
+ "top_places_traced": 14
+}
