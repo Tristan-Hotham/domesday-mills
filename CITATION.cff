@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite it as below."
+title: "Millstreams: Domesday Mill Places, Modern Traces of Mills and the Textile Mills that Went Elsewhere"
+type: dataset
+authors:
+  - family-names: Hotham
+    given-names: Tristan
+    orcid: "https://orcid.org/0000-0003-4931-9349"
+    affiliation: "Independent researcher"
+doi: "10.5281/zenodo.23727140"
+url: "https://maps.tristanhotham.com/domesday-mills/"
+repository-code: "https://github.com/Tristan-Hotham/domesday-mills"
+license: CC-BY-NC-SA-4.0
+keywords:
+  - "Domesday Book"
+  - "watermills"
+  - "windmills"
+  - "mills"
+  - "persistence"
+  - "textile mills"
+  - "Industrial Revolution"
+  - "OpenStreetMap"
+  - "Wikidata"
+  - "historical geography"
